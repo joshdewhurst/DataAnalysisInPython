@@ -25,14 +25,17 @@ For this project, we will be using the following libraries:
 
 We will start by loading the data into a Pandas DataFrame using the `read_csv()` function:
 
-```python
+`
 import pandas as pd
+`
 
 # Load the data from a CSV file
+`
 sales_data = pd.read_csv("sales_data.csv")
+`
 
 
-#O verall Revenue:
+# Overall Revenue:
 To calculate the overall revenue for the year, we can use the sum() function to sum up the revenue column:
 '# Calculate the overall revenue
 overall_revenue = sales_data["revenue"].sum()
