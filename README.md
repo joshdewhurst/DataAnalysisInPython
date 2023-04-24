@@ -64,8 +64,9 @@ To analyze the customer demographics, we can use the groupby() function to group
 # Shipping Cost Distribution:
 To analyze the shipping cost distribution, we can use the hist() function from Matplotlib to create a histogram of the shipping costs:
 
-`import matplotlib.pyplot as plt
+`import matplotlib.pyplot as plt `
 
+`
 plt.hist(sales_data["shipping_cost"], bins=20)
 plt.xlabel("Shipping Cost")
 plt.ylabel("Frequency")
