@@ -25,7 +25,7 @@ For this project, we will be using the following libraries:
 
 We will start by loading the data into a Pandas DataFrame using the `read_csv()` function:
 
-```python
+``python
 import pandas as pd
 
 # Load the data from a CSV file
