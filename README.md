@@ -79,8 +79,8 @@ sales_data.set_index("date", inplace=True)
 sales_data.resample("M")["revenue"].sum().plot()
 plt.xlabel("Date")
 plt.ylabel("Revenue")
-plt.show()
-
+plt.show()`
+`
 plt.scatter(sales_data["age"], sales_data["revenue"])
 plt.xlabel("Age")
 plt.ylabel("Revenue")
