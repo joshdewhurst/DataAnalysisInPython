@@ -13,7 +13,7 @@ A fictional e-commerce store has provided us with their sales data for the past 
 
 ### Libraries Used:
 
-For this project, we will be using the following libraries:
+For this project, I will be using the following libraries:
 
 - Pandas: for data manipulation and analysis
 - NumPy: for numerical computing
@@ -23,7 +23,7 @@ For this project, we will be using the following libraries:
 
 #### Loading the Data:
 
-We will start by loading the data into a Pandas DataFrame using the `read_csv()` function:
+I will start by loading the data into a Pandas DataFrame using the `read_csv()` function:
 
 `
 import pandas as pd
