@@ -37,24 +37,18 @@ sales_data = pd.read_csv("sales_data.csv")
 
 # Overall Revenue:
 To calculate the overall revenue for the year, we can use the sum() function to sum up the revenue column:
-'
-overall_revenue = sales_data["revenue"].sum()
-'
+'overall_revenue = sales_data["revenue"].sum()'
 
 # Top-Selling Products:
 To identify the top-selling products, we can use the groupby() function to group the data by product, and then use the sum() function to calculate the total revenue for each product:
-`
-product_revenue = sales_data.groupby("product")["revenue"].sum()
+`product_revenue = sales_data.groupby("product")["revenue"].sum()`
 
-top_products = product_revenue.sort_values(ascending=False).head(10)
-`
+`top_products = product_revenue.sort_values(ascending=False).head(10)`
 
 # Average Order Value:
 To calculate the average order value, we can divide the overall revenue by the number of orders:
 
-`
-avg_order_value = overall_revenue / sales_data["order_id"].nunique()
-`
+`avg_order_value = overall_revenue / sales_data["order_id"].nunique()`
 
 # Customer Demographics:
 To analyze the customer demographics, we can use the groupby() function to group the data by customer age and gender, and then calculate the average order value for each group:
