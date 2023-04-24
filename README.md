@@ -42,16 +42,16 @@ To calculate the overall revenue for the year, we can use the sum() function to 
 
 # Top-Selling Products:
 To identify the top-selling products, we can use the groupby() function to group the data by product, and then use the sum() function to calculate the total revenue for each product:
-`# Group the data by product and calculate the total revenue for each product
-product_revenue = sales_data.groupby("product")["revenue"].sum()`
+# Group the data by product and calculate the total revenue for each product
+`product_revenue = sales_data.groupby("product")["revenue"].sum()`
 
 # Sort the data in descending order and take the top 10 products
 `top_products = product_revenue.sort_values(ascending=False).head(10)`
-`
+
 #Average Order Value:
 To calculate the average order value, we can divide the overall revenue by the number of orders:
-`# Calculate the average order value
-avg_order_value = overall_revenue / sales_data["order_id"].nunique()
+# Calculate the average order value
+`avg_order_value = overall_revenue / sales_data["order_id"].nunique()
 `
 
 Customer Demographics:
