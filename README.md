@@ -51,22 +51,26 @@ top_products = product_revenue.sort_values(ascending=False).head(10)
 
 # Average Order Value:
 To calculate the average order value, we can divide the overall revenue by the number of orders:
+
 `
 avg_order_value = overall_revenue / sales_data["order_id"].nunique()
 `
+
 # Customer Demographics:
 To analyze the customer demographics, we can use the groupby() function to group the data by customer age and gender, and then calculate the average order value for each group:
+
 `customer_demographics = sales_data.groupby(["age", "gender"])["revenue"].mean()`
 
 # Shipping Cost Distribution:
 To analyze the shipping cost distribution, we can use the hist() function from Matplotlib to create a histogram of the shipping costs:
+
 `import matplotlib.pyplot as plt
 
 plt.hist(sales_data["shipping_cost"], bins=20)
 plt.xlabel("Shipping Cost")
 plt.ylabel("Frequency")
-plt.show()
-`
+plt.show()`
+
 # Trends and Patterns:
 To identify trends and patterns in the sales data, we can use various data visualization techniques such as line charts, scatter plots, and heat maps:
 `sales_data["date"] = pd.to_datetime(sales_data["date"])
