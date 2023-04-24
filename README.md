@@ -25,11 +25,14 @@ For this project, we will be using the following libraries:
 
 We will start by loading the data into a Pandas DataFrame using the `read_csv()` function:
 
-``python
+`python
 import pandas as pd
+`
 
 # Load the data from a CSV file
+`
 sales_data = pd.read_csv("sales_data.csv")
+`
 
 # Overall Revenue:
 To calculate the overall revenue for the year, we can use the sum() function to sum up the revenue column:
@@ -40,10 +43,10 @@ overall_revenue = sales_data["revenue"].sum()
 # Top-Selling Products:
 To identify the top-selling products, we can use the groupby() function to group the data by product, and then use the sum() function to calculate the total revenue for each product:
 `# Group the data by product and calculate the total revenue for each product
-product_revenue = sales_data.groupby("product")["revenue"].sum()
+product_revenue = sales_data.groupby("product")["revenue"].sum()`
 
 # Sort the data in descending order and take the top 10 products
-top_products = product_revenue.sort_values(ascending=False).head(10)
+`top_products = product_revenue.sort_values(ascending=False).head(10)`
 `
 #Average Order Value:
 To calculate the average order value, we can divide the overall revenue by the number of orders:
