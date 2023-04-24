@@ -74,18 +74,16 @@ plt.show()`
 
 # Trends and Patterns:
 To identify trends and patterns in the sales data, we can use various data visualization techniques such as line charts, scatter plots, and heat maps:
-`sales_data["date"] = pd.to_datetime(sales_data["date"])
+`sales_data["date"] = pd.to_datetime(sales_data["date"])`
+`sales_data.set_index("date", inplace=True)`
+`sales_data.resample("M")["revenue"].sum().plot()`
 
-sales_data.set_index("date", inplace=True)
-
-sales_data.resample("M")["revenue"].sum().plot()
-
-plt.xlabel("Date")
+`plt.xlabel("Date")
 plt.ylabel("Revenue")
 plt.show()`
-`
 
-plt.scatter(sales_data["age"], sales_data["revenue"])
+
+`plt.scatter(sales_data["age"], sales_data["revenue"])
 plt.xlabel("Age")
 plt.ylabel("Revenue")
 `
