@@ -37,7 +37,7 @@ sales_data = pd.read_csv("sales_data.csv")
 
 # Overall Revenue:
 To calculate the overall revenue for the year, we can use the sum() function to sum up the revenue column:
-'# Calculate the overall revenue
+'//Calculate the overall revenue
 overall_revenue = sales_data["revenue"].sum()
 '
 
